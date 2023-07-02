@@ -1,0 +1,19 @@
+@media screen and (max-width:880px){
+    .cart{
+        grid-template-columns:  1fr ;  
+        // main{
+        //     overflow-y: auto;
+        //     &::-webkit-scrollbar{
+        //         display: none;
+        //     }
+        // }
+        aside{
+            padding: 1.5rem;
+            h2{
+                margin:0.5rem;
+            }
+            
+        } 
+    }
+    
+}
