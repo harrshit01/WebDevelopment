@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        .hide{
+            display:none;
+        }
+        .main{
+            display:grid;
+            place-items:center ;
+            width:100vw;
+            height:100vh;
+            background: url("bg1.jpg") no-repeat;
+            background-size: 100% 100%;
+        }
+        .gamearea{
+            position:relative;
+            width:400px;
+            background: #2d3436;
+            height:100vh;
+            border-right: 5px dashed white;
+            border-left: 5px dashed white;
+
+        }
+        .score{
+            position: absolute;
+            background: #487eb0;
+            width:300px;
+            height: 70px;
+            top:15px;
+            left: 30px;
+            text-align:center;
+            color: white;
+            line-height:70px;
+            font-size: 1.5rem;
+            box-shadow: 0 5px 5px #777;
+
+        }
+        .start{
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50% ,-50%);
+            z-index: 5;
+            width: 50%;
+            background:#ee5253;
+            border: 1px solid #ff6b6b;
+            padding: 15px;
+            color: white;
+            text-align:center;
+            letter-spacing:3px;
+            word-spacing: 3px;
+            text-transform: uppercase;
+            box-shadow: 0 3px 3px #777;
+            line-height:30px;
+            text-shadow: 0 5px 5px #777;
+            font-size : 20px;
+            
+        }
+        .car{
+            width:60px;
+            height:90px;
+            background:red;
+            position:absolute;
+            left:0px;
+            bottom:50px;
+            z-index: 2;
+            background : url("enemy.png") no-repeat;
+            background-size : 100% 100%;
+        }
+        .lines{
+            width:10px;
+            height:100px;
+            position:absolute;
+            margin-left:195px;
+            background: white;
+        }
+        .enemycar{
+            width:50px;
+            height:90px;
+            background : url("car.png") no-repeat;       
+            background-size : 100% 100%; 
+            
+            position:absolute;
+            left:0px;
+            bottom:0px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="score" ></div>
+        <div class="start" >
+            <p>press here to start <br>
+               use arrow keys to move <br>
+               if you hit another car you will lose </p>
+
+        </div>
+        <div class="gamearea" >
+        </div>
+
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
