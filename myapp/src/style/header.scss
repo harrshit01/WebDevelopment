@@ -1,0 +1,33 @@
+@import "./app.scss";
+header{
+    height:60px;
+    width:100%;
+    background-color: $second;
+    position: sticky;
+    top:0;
+    z-index: 100;
+    
+    .header{
+        width:95%;
+        height:100%;
+        margin:0 0 0 2rem;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        h1{
+            color:$third;
+
+        }
+        div{
+            a{
+                margin:0 1rem;
+                color:white;
+            }
+            
+            a:hover{
+                color:$first;
+
+            }
+        }
+    }
+}

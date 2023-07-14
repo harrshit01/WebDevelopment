@@ -1,0 +1,61 @@
+@import "app.scss";
+
+.contact{
+    height:100vh;
+    width:100%;
+    display: grid;
+    place-items: center;
+    background-color: $third;
+    >div{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width:80%;
+        height:80%;
+        background-color: $first;
+        border-radius:0 100px 100px 0 ;
+        h1{
+            margin: 2rem 4rem;
+            color:$second;
+            align-self: flex-start;
+        }
+        form{
+            height:60%;
+            display: flex;
+            flex-direction: column;
+            div{
+                margin:1rem ;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                label{
+                    margin: 0 5rem 0 0;
+                    color:$second;
+                    font-weight: 600;
+                }
+                input{
+                    outline: none;
+                    height:2.7rem;
+                    width:250px;
+                       
+                }
+            }
+            
+        button{
+            
+            padding:0.7rem 2rem ;
+            margin:3rem auto;
+            font-size: 1rem;
+            background-color: $second;
+            color:$first;
+            border: none;
+            border-radius: 6px;
+
+        }
+        button:hover{
+            background-color: $third;
+        }
+        }
+    }
+}
